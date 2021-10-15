@@ -1,0 +1,136 @@
+--Заполнение "salary"
+insert into salary (id, monthly_salary) values (default, 250);
+insert into salary (id, monthly_salary) values (default, 300);
+insert into salary (id, monthly_salary) values (default, 350);
+insert into salary (id, monthly_salary) values (default, 400);
+insert into salary (id, monthly_salary) values (default, 450);
+insert into salary (id, monthly_salary) values (default, 500);
+insert into salary (id, monthly_salary) values (default, 550);
+insert into salary (id, monthly_salary) values (default, 600);
+insert into salary (id, monthly_salary) values (default, 650);
+insert into salary (id, monthly_salary) values (default, 700);
+SELECT * FROM salary;
+
+--Заполнение "roles"
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Кальянный мастер');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Консультант');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Чайный мастер');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Бариста');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Администратор');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Бармен');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Повар');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Хозяюшка');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Официант');
+INSERT INTO roles (id, id_role_title) VALUES (DEFAULT, 'Управляющий');
+SELECT * FROM roles;
+
+--Заполнение "roles_salary"
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 1, 17);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 2, 18);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 3, 20);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 4, 19);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 5, 23);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 6, 21);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 7, 22);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 8, 15);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 9, 16);
+INSERT INTO roles_salary (id, id_role, id_salary) VALUES (DEFAULT, 10, 24);
+SELECT * FROM roles_salary;
+
+--Заполнение "employees"
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Иван Пушкин');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Диана Петрова');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Олеся Самсонова');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Мария Семенова');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Екатерина Быкова');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Артур Саргсян');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Юрий Затупа');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Мария Черная');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Кристина Собакевич');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Антон Пирожков');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Настя Маленькая');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Ангелина Сидорович');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Елена Анфилова');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Сергей Костюкевич');
+INSERT INTO employees (id, employee_id) VALUES (DEFAULT, 'Елизавета Шауро');
+SELECT * FROM employees;
+
+--Заполнение "employees_roles"
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 1, 1);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 6, 2);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 9, 3);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 9, 4);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 7, 5);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 6, 6);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 1, 7);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 3, 8);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 5, 9);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 10, 10);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 8, 11);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 2, 12);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 4, 13);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 7, 14);
+INSERT INTO employees_roles (id, id_role, id_employee) VALUES (DEFAULT, 3, 15);
+SELECT * FROM employees_roles;
+
+--Заполнение "service"
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Кальян', 20);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Коктейль', 10);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Консультация', 5);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Чайная церемония', 50);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Капучино', 3);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Уборка', 15);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Выписка ТН', 5);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Борщ с собой', 4);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Начисление ЗП', 7);
+INSERT INTO service (id, service_title, price) VALUES (DEFAULT, 'Встреча гостя', 1);
+SELECT * FROM service;
+
+--Заполнение "materials"
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Робуста', 5, 20);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Арабика', 3, 25);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Молоко', 3, 2);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Уголь', 10, 14);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Табак', 30, 9);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Пуэр', 10, 85);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Сметана', 5, 2);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Томаты', 2, 4);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Свекла', 3, 1);
+INSERT INTO materials (id, material_title, amount, price) VALUES (DEFAULT, 'Сливки', 2, 3);
+SELECT * FROM materials;
+
+--Заполнение "claim"
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 1, 1, 4, CURRENT_TIMESTAMP, 1);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 2, 6, 3, CURRENT_TIMESTAMP, 6);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 3, 12, 6, CURRENT_TIMESTAMP, 12);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 4, 8, 6, CURRENT_TIMESTAMP, 8);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 5, 13, 2, CURRENT_TIMESTAMP, 13);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 6, 11, 5, CURRENT_TIMESTAMP, 11);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 7, 9, 5, CURRENT_TIMESTAMP, 9);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 8, 5, 9, CURRENT_TIMESTAMP, 5);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 9, 10, 9, CURRENT_TIMESTAMP, 10);
+INSERT INTO claim (id, service_id, employee_id, material_id, claim_date, sales_manager)
+	VALUES (DEFAULT, 10, 4, 2, CURRENT_TIMESTAMP, 4);
+SELECT * FROM claim;
+
+--Добавить 10 строк поставщиков в таблицу Suppliers
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ОАО Молоко');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ИП Петров и Водкин');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ЧТУП Восток');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ООО Запас слов');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ИП Табачников');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ЗАО Пупс');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'Овощи-трейд');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'Уголек и Ко');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ООО Бумажки');
+INSERT INTO suppliers (id, supplier_name) VALUES (DEFAULT, 'ИП Збыщенко');
+SELECT * FROM suppliers;
